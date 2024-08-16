@@ -67,9 +67,7 @@ console.log(categoryDetails);
                 <Card.Body>
                     <Card.Title className='d-flex justify-content-between align-items-center'>
                         <h6>{data?.caption}</h6>
-                        {categoryDetails? <button onClick={()=>deleteCategoryVideo(categoryDetails.id,data?.id)} className='btn'>
-                            <i class="fa-solid fa-trash text-danger"></i>
-                        </button> :<button onClick={() => handleDeleteVideo(data?.id)} className='btn'>
+                        {categoryDetails? "" :<button onClick={() => handleDeleteVideo(data?.id)} className='btn'>
                             <i class="fa-solid fa-trash text-danger"></i>
                         </button>}
                     </Card.Title>
